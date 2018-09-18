@@ -4,7 +4,10 @@ Initial implementation of a custom tag that stores HTML code that gets
 rendered on the frontend.
 
 This package is meant as an early access. The feature will ultimately
-be moved to the richtext core.
+be moved to the richtext core. It requires
+`ezsystems/ezplatform-admin-ui` support for editing the main content of a
+custom tag (https://github.com/ezsystems/ezplatform-admin-ui/pull/619),
+planned for version 1.4.
 
 ## Installation
 
