@@ -1,0 +1,21 @@
+{
+    "name": "ezsystems/rawhtml-richtext-tag",
+    "description": "An eZ Platform custom tag that stores raw HTML code that gets rendered to the frontend.",
+    "type": "ezplatform-bundle",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "eZ Systems",
+            "email": "info@ez.no"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ezsystems/ezplatform-admin-ui": "dev-custom_tag_content_edit as 1.3.0-beta1"
+    },
+    "autoload": {
+        "psr-4": {
+            "EzSystems\\RawHtmlRichTextTagBundle\\" : "."
+        }
+    }
+}
