@@ -46,3 +46,12 @@ Enable the `rawhtml` tag in `app/config/ezplatform.yml`:
                 fieldtypes:
                     ezrichtext:
                         custom_tags: [rawhtml]
+
+## Known issues
+
+### Focus error when pasting
+When text is pasted in the tag's main textarea, an error occurs, related
+to `setFocus()`. Those errors have happend before in the Online Editor,
+and will have to be fixed upstream.
+
+No known workaround for the time being.
