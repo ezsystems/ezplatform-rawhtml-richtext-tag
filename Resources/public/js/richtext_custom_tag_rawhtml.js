@@ -14,4 +14,4 @@
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;');
     });
-})();
+})(window, window.eZ);
