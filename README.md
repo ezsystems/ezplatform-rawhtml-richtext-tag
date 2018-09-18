@@ -29,9 +29,8 @@ add the package to the requirements, and change the requirement for `ezplatform-
 Edit `app/config/config.yml`, and locate the `assetic section`. Add
 `EzSystemsRawHtmlRichTextTagBundle` to the `bundles` array:
 
-    framework:
-        assetic:
-            bundles: [ EzPlatformAdminUiBundle, EzSystemsRawHtmlRichTextTagBundle ]
+    assetic:
+        bundles: [ EzPlatformAdminUiBundle, EzSystemsRawHtmlRichTextTagBundle ]
 
 Run `composer update`. During the update process, the assets from the
 rawhtml bundle should be installed in `web/bundles/ezsystemsrawhtmlrichtexttag`.
