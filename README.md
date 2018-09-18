@@ -19,7 +19,7 @@ In eZ Platform's `composer.json`, define a new repository:
 
 add the package to the requirements, and change the requirement for `ezplatform-admin-ui`:
 
-    "requires": {
+    "require": {
         ...
         "ezsystems/ezplatform-admin-ui": "dev-custom_tag_content_edit as 1.4.x-dev",
         ...
