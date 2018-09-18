@@ -1,0 +1,7 @@
+ezrichtext:
+    custom_tags:
+        rawhtml:
+            template: ezrichtext_custom_tags/rawhtml.html.twig
+            attributes:
+                title:
+                    type: string

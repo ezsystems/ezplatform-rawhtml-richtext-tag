@@ -1,0 +1,8 @@
+services:
+    richtext.custom_tag.rawhtml.script:
+        parent: EzSystems\EzPlatformAdminUi\Component\ScriptComponent
+        arguments:
+            $src: "/bundles/ezsystemsrawhtmlrichtexttag/js/richtext_custom_tag_rawhtml.js"
+        public: true
+        tags:
+            - { name: ezplatform.admin_ui.component, group: 'content-edit-form-before' }
