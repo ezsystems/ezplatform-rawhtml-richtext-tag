@@ -3,5 +3,5 @@ ezrichtext:
         rawhtml:
             template: EzSystemsRawHtmlRichTextTagBundle::rawhtml.html.twig
             attributes:
-                title:
+                name:
                     type: string
