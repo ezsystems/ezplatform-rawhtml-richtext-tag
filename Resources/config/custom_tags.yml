@@ -1,7 +1,0 @@
-ezrichtext:
-    custom_tags:
-        rawhtml:
-            template: EzSystemsRawHtmlRichTextTagBundle::rawhtml.html.twig
-            attributes:
-                name:
-                    type: string

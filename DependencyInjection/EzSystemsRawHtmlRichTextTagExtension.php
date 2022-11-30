@@ -24,18 +24,18 @@ class EzSystemsRawHtmlRichTextTagExtension extends Extension implements PrependE
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
-
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.yml');
     }
 
     public function prepend(ContainerBuilder $container)
     {
-        $configFile = __DIR__ . '/../Resources/config/custom_tags.yml';
+        $configFile = __DIR__ . '/../Resources/config/custom_tags.yaml';
         $config = Yaml::parse(file_get_contents($configFile));
-        $container->prependExtensionConfig('ezpublish', $config);
+        $container->prependExtensionConfig('ibexa_fieldtype_richtext', $config);
+        $container->addResource(new FileResource($configFile));
+
+        $configFile = __DIR__ . '/../Resources/config/ibexa.yaml';
+        $config = Yaml::parse(file_get_contents($configFile));
+        $container->prependExtensionConfig('ibexa', $config);
         $container->addResource(new FileResource($configFile));
     }
-
-
 }
